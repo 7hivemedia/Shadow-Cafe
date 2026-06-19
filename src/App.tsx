@@ -6,6 +6,9 @@ import ReservationForm from "./components/ReservationForm";
 import Gallery from "./components/Gallery";
 import AdminPanel from "./components/AdminPanel";
 
+import heroImg from "./assets/images/shadow_cafe_hero_1781888955671.jpg";
+import interiorImg from "./assets/images/shadow_cafe_interior_1781888974353.jpg";
+
 import { 
   Menu as MenuIcon, 
   Sparkles, 
@@ -217,7 +220,7 @@ export default function App() {
                 <div className="absolute inset-0 rounded-[32px] border border-zinc-800/40 bg-zinc-950/40 backdrop-blur-md overflow-hidden shadow-2xl transition-all duration-500 hover:border-zinc-700/60 group">
                   {/* Aspect Ratio Box holding original hero image */}
                   <img
-                    src="/src/assets/images/shadow_cafe_hero_1781888955671.jpg"
+                    src={heroImg}
                     alt="Shadow Cafe Interior Ambiance"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-all duration-700"
@@ -323,7 +326,7 @@ export default function App() {
               </div>
               <div className="rounded-3xl border border-zinc-900 overflow-hidden bg-black aspect-video relative flex items-center justify-center">
                 <img
-                  src="/src/assets/images/shadow_cafe_interior_1781888974353.jpg"
+                  src={interiorImg}
                   alt="Glass Hookah Session"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover opacity-75 grayscale hover:grayscale-0 transition duration-700"
