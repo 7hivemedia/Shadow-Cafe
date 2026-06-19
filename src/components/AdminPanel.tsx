@@ -14,7 +14,7 @@ export default function AdminPanel({ sections }: AdminPanelProps) {
   const [errorMsg, setErrorMsg] = useState("");
   const [filterStatus, setFilterStatus] = useState<string>("all");
 
-  const expectedPasscode = "7777";
+  const expectedPasscode = "1210";
 
   const handleUnlock = (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ export default function AdminPanel({ sections }: AdminPanelProps) {
       setErrorMsg("");
       fetchBookings();
     } else {
-      setErrorMsg("Incorrect access code. Try the default passcode '7777'.");
+      setErrorMsg("Incorrect access code. Please try again.");
     }
   };
 
@@ -109,13 +109,6 @@ export default function AdminPanel({ sections }: AdminPanelProps) {
             </button>
           </div>
         </form>
-
-        <div className="p-3 bg-zinc-950 rounded-xl border border-zinc-905 flex items-start gap-2.5 text-left text-[10px] text-zinc-550">
-          <Info className="h-3.5 w-3.5 text-indigo-500 shrink-0 mt-0.5" />
-          <p>
-            Default Passcode: <span className="font-mono text-zinc-400 font-bold">7777</span>. Standard development credentials allow immediate access.
-          </p>
-        </div>
       </div>
     );
   }
