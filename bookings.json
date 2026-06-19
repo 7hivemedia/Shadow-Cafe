@@ -1,0 +1,32 @@
+[
+  {
+    "id": "b-001",
+    "name": "Arjun Mehta",
+    "email": "arjun.mehta@outlook.in",
+    "phone": "+91 98450 12345",
+    "date": "2026-06-19",
+    "time": "20:00",
+    "guests": 4,
+    "sectionId": "main-hall",
+    "tableId": "MH-S3",
+    "preferredFlavorId": "purple-haze",
+    "customRequests": "Celebrating a project milestone, near the acoustic speakers if possible.",
+    "status": "confirmed",
+    "createdAt": "2026-06-19T17:16:38.757Z"
+  },
+  {
+    "id": "b-002",
+    "name": "Riya Sharma",
+    "email": "riya.sharma@gmail.com",
+    "phone": "+91 91234 56789",
+    "date": "2026-06-20",
+    "time": "21:30",
+    "guests": 2,
+    "sectionId": "vip-cave",
+    "tableId": "VIP-C1",
+    "preferredFlavorId": "kashmir-peach",
+    "customRequests": "Quiet anniversary seating, dynamic cooling setup directly requested.",
+    "status": "confirmed",
+    "createdAt": "2026-06-19T17:16:38.757Z"
+  }
+]

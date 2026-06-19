@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;750;800&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Outfit", sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+/* Custom high-craft animations for a sensory immersive experience */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes bubbleUp {
+  0% { transform: translateY(100%) scale(0.6); opacity: 0; }
+  10% { opacity: 0.7; }
+  90% { opacity: 0.7; }
+  100% { transform: translateY(-80px) scale(1.4); opacity: 0; }
+}
+
+@keyframes vaporDrift {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0; }
+  25% { opacity: 0.35; }
+  75% { opacity: 0.15; }
+  100% { transform: translate(50px, -150px) scale(2.2) rotate(20deg); opacity: 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 105% { box-shadow: 0 0 10px rgba(99, 102, 241, 0.15); }
+  50% { box-shadow: 0 0 25px rgba(99, 102, 241, 0.35); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-bubble-up {
+  animation: bubbleUp 3.5s ease-in infinite;
+}
+
+.animate-vapor-drift {
+  animation: vaporDrift 10s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Custom background blur utilities */
+.glassmorphism {
+  background: rgba(13, 13, 16, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glassmorphism-premium {
+  background: linear-gradient(135deg, rgba(20, 20, 28, 0.8) 0%, rgba(10, 10, 12, 0.95) 100%);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}

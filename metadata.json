@@ -1,0 +1,6 @@
+{
+  "name": "Shadow Shisha Cafe & Lounge",
+  "description": "Premium online shisha cafe portal featuring visual ambiance galleries, real-time table coordinates reservations, and an AI-powered custom flavor sommelier.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
